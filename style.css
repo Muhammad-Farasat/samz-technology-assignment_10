@@ -64,3 +64,54 @@ body{
     transform: rotateY(0deg);
 }
 
+@media (max-width: 480px) {
+
+    body{
+        min-height: max-content;
+        overflow-y: scroll;
+    }
+
+   #board{
+    grid-template-columns: repeat(2, 120px);
+   } 
+
+   .card{
+    width: 120px;
+   }
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    body{
+        min-height: max-content;
+        overflow-y: scroll;
+    }
+
+   #board{
+    grid-template-columns: repeat(3, 150px);
+   } 
+
+   .card{
+    width: 150px;
+   }
+
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    body{
+        min-height: max-content;
+        overflow-y: scroll;
+    }
+
+   #board{
+    grid-template-columns: repeat(4, 200px);
+   } 
+
+   .card{
+    width: 100%;
+   }
+
+}
